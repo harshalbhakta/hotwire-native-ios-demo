@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F8401CC82CDE333D008650B5 /* HotwireNative in Frameworks */ = {isa = PBXBuildFile; productRef = F8401CC72CDE333D008650B5 /* HotwireNative */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F8401CA92CDE3282008650B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8401CC82CDE333D008650B5 /* HotwireNative in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +130,7 @@
 			);
 			name = "hotwire-native-ios-demo";
 			packageProductDependencies = (
+				F8401CC72CDE333D008650B5 /* HotwireNative */,
 			);
 			productName = "hotwire-native-ios-demo";
 			productReference = F8401C922CDE3280008650B5 /* hotwire-native-ios-demo.app */;
@@ -208,6 +214,9 @@
 			);
 			mainGroup = F8401C892CDE3280008650B5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F8401CC62CDE333D008650B5 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F8401C932CDE3280008650B5 /* Products */;
 			projectDirPath = "";
@@ -569,6 +578,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F8401CC62CDE333D008650B5 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/hotwire-native-ios";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F8401CC72CDE333D008650B5 /* HotwireNative */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8401CC62CDE333D008650B5 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */;
+			productName = HotwireNative;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F8401C8A2CDE3280008650B5 /* Project object */;
 }
